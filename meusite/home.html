@@ -30,58 +30,63 @@
                     Aos 35 anos, o atacante soma agora 742 gols em jogos oficiais de competição na carreira e está a um gol de igualar a marca do brasileiro Romário, que fez 743 gols.
                 </p>
             </div>
+            <br>
         </div>
     </div>
-    <!-- time 1 -->
-    <div class="Time_1">
-      <select id="times_paulistas1" onchange="foto_time1()">
-          <option value="">Selecione um time</option>
-          <option value="São Paulo">São Paulo</option>
-          <option value="Corinthians">Corinthians</option>
-          <option value="Palmeiras">Palmeiras</option>
-          <option value="Santo André">Santo André</option>
-          <option value="Guarani">Guarani</option>
-          <option value="Água Santa">Água Santa</option>
-          <option value="Botafogo">Botafogo</option>
-          <option value="Ferroviária">Ferroviária</option>
-          <option value="Ponte Preta">Ponte Preta</option>
-          <option value="Mirassol">Mirassol</option>
-          <option value="Ituano">Ituano</option>
-      </select>
-      <div id="formacao1">
 
-      </div>
-    </div>
-
-    <!-- Placar -->
-    <div class="placar">
-        <h1><b id="gols_time1">0</b> x <b id="gols_time2">0</b></h1>
-        <br>
-        <button onclick="jogar()">Jogar</button>
-        <br>
-        <br>
-        <div id="resultado">Escolha dois times:</div>
-    </div>
-
-    <!-- time 2 -->
-    <div class="Time_2">
-        <select id="times_paulistas2" onchange="foto_time2()">
-            <option value="">Selecione um time</option>
-            <option value="São Paulo">São Paulo</option>
-            <option value="Corinthians">Corinthians</option>
-            <option value="Palmeiras">Palmeiras</option>
-            <option value="Santo André">Santo André</option>
-            <option value="Guarani">Guarani</option>
-            <option value="Água Santa">Água Santa</option>
-            <option value="Botafogo">Botafogo</option>
-            <option value="Ferroviária">Ferroviária</option>
-            <option value="Ponte Preta">Ponte Preta</option>
-            <option value="Mirassol">Mirassol</option>
-            <option value="Ituano">Ituano</option>
-        </select>
-        <div id="formacao2"> 
+    <div class="simulador">
+        <!-- time 1 -->
+        <div class="Time_1">
+            <select id="times_paulistas1" onchange="foto_time1()">
+                <option value="">Selecione um time</option>
+                <option id="sp" value="São Paulo">São Paulo</option>
+                <option id="cor" value="Corinthians">Corinthians</option>
+                <option id="pal" value="Palmeiras">Palmeiras</option>
+                <option id="st" value="Santo André">Santo André</option>
+                <option id="gua" value="Guarani">Guarani</option>
+                <option id="agua" value="Água Santa">Água Santa</option>
+                <option id="bot" value="Botafogo">Botafogo</option>
+                <option id="fer" value="Ferroviária">Ferroviária</option>
+                <option id="pon" value="Ponte Preta">Ponte Preta</option>
+                <option id="mir" value="Mirassol">Mirassol</option>
+                <option id="itu" value="Ituano">Ituano</option>
+            </select>
+            <div id="formacao1">
+    
+            </div>
         </div>
-      </div>
+  
+        <!-- Placar -->
+        <div class="placar">
+            <h1><b id="gols_time1">0</b> x <b id="gols_time2">0</b></h1>
+            <br>
+            <button id="jogar_btn" onclick="jogar()">Jogar</button>
+            <br>
+            <br>
+            <div id="resultado" style="background-color: rgba(0, 0, 0, 0.5); color: white;">Escolha dois times:</div>
+        </div>
+  
+        <!-- time 2 -->
+        <div class="Time_2">
+            <select id="times_paulistas2" onchange="foto_time2()">
+                <option value="">Selecione um time</option>
+                <option id="sp2" value="São Paulo">São Paulo</option>
+                <option id="cor2" value="Corinthians">Corinthians</option>
+                <option id="pal2" value="Palmeiras">Palmeiras</option>
+                <option id="st2" value="Santo André">Santo André</option>
+                <option id="gua2" value="Guarani">Guarani</option>
+                <option id="agua2" value="Água Santa">Água Santa</option>
+                <option id="bot2" value="Botafogo">Botafogo</option>
+                <option id="fer2" value="Ferroviária">Ferroviária</option>
+                <option id="pon2" value="Ponte Preta">Ponte Preta</option>
+                <option id="mir2" value="Mirassol">Mirassol</option>
+                <option id="itu2" value="Ituano">Ituano</option>
+            </select>
+            <div id="formacao2"> 
+            </div>
+        </div>
+
+    </div>
     
     <!-- Rodapé -->
     <div class="footer">
@@ -96,26 +101,37 @@
     function foto_time1(){
         if (times_paulistas1.value == 'São Paulo'){
             formacao1.innerHTML = '<img src="img/sp.png">';
+            sp2.style.display = 'none';
         } else if (times_paulistas1.value == 'Corinthians'){
             formacao1.innerHTML = '<img src="img/cor.png">';
+            cor2.style.display = 'none';
         } else if (times_paulistas1.value == 'Palmeiras'){
             formacao1.innerHTML = '<img src="img/pal.png">';
+            pal2.style.display = 'none';
         } else if (times_paulistas1.value == 'Santo André'){
             formacao1.innerHTML = '<img src="img/sta.png">';
+            st2.style.display = 'none';
         } else if (times_paulistas1.value == 'Guarani'){
             formacao1.innerHTML = '<img src="img/gua.png">';
+            gua2.style.display = 'none';
         } else if (times_paulistas1.value == 'Água Santa'){
             formacao1.innerHTML = '<img src="img/agua.png">';
+            agua2.style.display = 'none';
         } else if (times_paulistas1.value == 'Botafogo'){
             formacao1.innerHTML = '<img src="img/bot.png">';
+            bot2.style.display = 'none';
         } else if (times_paulistas1.value == 'Ferroviária'){
             formacao1.innerHTML = '<img src="img/fer.png">';
+            fer2.style.display = 'none';
         } else if (times_paulistas1.value == 'Ponte Preta'){
             formacao1.innerHTML = '<img src="img/pon.png">';
+            pon2.style.display = 'none';
         } else if (times_paulistas1.value == 'Mirassol'){
             formacao1.innerHTML = '<img src="img/mir.png">';
+            mir2.style.display = 'none';
         } else if (times_paulistas1.value == 'Ituano'){
             formacao1.innerHTML = '<img src="img/itu.png">';
+            itu2.style.display = 'none';
         } else if(times_paulistas1.value == ''){
             formacao1.innerHTML = '';
         }
@@ -124,26 +140,37 @@
     function foto_time2(){
         if (times_paulistas2.value == 'São Paulo'){
             formacao2.innerHTML = '<img src="img/sp.png">';
+            sp.style.display = 'none';
         } else if (times_paulistas2.value == 'Corinthians'){
             formacao2.innerHTML = '<img src="img/cor.png">';
+            cor.style.display = 'none';
         } else if (times_paulistas2.value == 'Palmeiras'){
             formacao2.innerHTML = '<img src="img/pal.png">';
+            pal.style.display = 'none';
         } else if (times_paulistas2.value == 'Santo André'){
             formacao2.innerHTML = '<img src="img/sta.png">';
+            st.style.display = 'none';
         } else if (times_paulistas2.value == 'Guarani'){
             formacao2.innerHTML = '<img src="img/gua.png">';
+            gua.style.display = 'none';
         } else if (times_paulistas2.value == 'Água Santa'){
             formacao2.innerHTML = '<img src="img/agua.png">';
+            agua.style.display = 'none';
         } else if (times_paulistas2.value == 'Botafogo'){
             formacao2.innerHTML = '<img src="img/bot.png">';
+            bot.style.display = 'none';
         } else if (times_paulistas2.value == 'Ferroviária'){
             formacao2.innerHTML = '<img src="img/fer.png">';
+            fer.style.display = 'none';
         } else if (times_paulistas2.value == 'Ponte Preta'){
             formacao2.innerHTML = '<img src="img/pon.png">';
+            pon.style.display = 'none';
         } else if (times_paulistas2.value == 'Mirassol'){
             formacao2.innerHTML = '<img src="img/mir.png">';
+            mir.style.display = 'none';
         } else if (times_paulistas2.value == 'Ituano'){
             formacao2.innerHTML = '<img src="img/itu.png">';
+            itu.style.display = 'none';
         } else if (times_paulistas2.value == ''){
             formacao2.innerHTML = '';
         }
