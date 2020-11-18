@@ -153,20 +153,21 @@ body{
     padding-top: 30px;
 }
 
-.fundo_log{
+.login{
     background-image: url('../img/estadio.jpg');
+    background-size: cover;
+    float: left;
     width: 100%;
-    height: 824px;
-    display: flex;
-    align-items: center;
+    height: 900px;
 }
+
 
 .form_cad1{
     text-align: center;
-    margin: 0 auto;
+    margin: 250px auto;
     width: 340px;
     font-size: 25px;
-    height: 280px;
+    height: 300px;
     border-radius: 15px;
     color: white;
     border:rgba(0, 0, 0, 0.493) solid 3px;
