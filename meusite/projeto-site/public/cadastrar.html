@@ -17,13 +17,15 @@
             </ul>
         </div>
         <div class="form_cad">
-            <form id="form_cadastro" method="post">
+            <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
                 <h3>Cadastro:</h3>
+                Cadastre seu nome: <br>
+                <input id="nome_usuario" name="nome" type="text" placeholder="Nome"><br><br>
                 Cadastre seu email: <br>
-                <input id="email_novo" type="text" placeholder="Email"><br><br>
+                <input id="email_usuario" name="email" type="text" placeholder="Email"><br><br>
                 Cadastre sua senha: <br>
-                <input id="senha_nova" type="password" placeholder="Senha"><br>
-                <button onclick="cadastrar()">Cadastrar</button><br>
+                <input id="senha_usuario" name="senha" type="password" placeholder="Senha"><br>
+                <button type="submit">Cadastrar</button><br>
                 <div style="font-size: 20px;" id="resultado"></div>
             </form>
         </div>
@@ -33,10 +35,9 @@
 </html>
 <script>
     function cadastrar() {
-        aguardar();
 
-        var email = email_novo.value;
-        var senha = senha_nova.value;
+        var email = email_usuario.value;
+        var senha = senha_usuario.value;
         resultado.innerHTML = '';
 
         if(email.indexOf('@' && '.') != -1 && email.length >=7 ){
@@ -59,24 +60,12 @@
 
                 console.log('Erro de cadastro!');
                 response.text().then(function (resposta) {
-                    div_erro.innerHTML = resposta;
+                    resultado.innerHTML = resposta;
                 });
-                finalizar_aguardar();
+                
             }
         });
 
         return false;
-    }
-
-    function aguardar() {
-        btn_entrar.disabled = true;
-        img_aguarde.style.display='block';
-        div_erro.style.display='none';
-    }
-
-    function finalizar_aguardar() {
-        btn_entrar.disabled = false;
-        img_aguarde.style.display='none';
-        div_erro.style.display='block';
     }
 </script>

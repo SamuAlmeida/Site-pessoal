@@ -30,3 +30,7 @@ OBS: Às vezes a atualização automática prometida no item #6.1 simplesmente n
 2. Em models, altere o arquivo "usuario.js" para que reflita sua tabela de usuários no SEU banco de dados.
 
 3. Em routes, altere o arquivo "usuarios.js" para que os comandos sejam corretamente referenciados à tabela de usuários no SEU banco de dados.
+
+SET IDENTITY_INSERT usuario ON
+insert into usuario (id_usuario, nome_usuario, email_usuario, senha_usuario) values('1','samuel','lopes.16.samuel@gmail.com','123456');
+SET IDENTITY_INSERT usuario OFF

@@ -1,7 +1,7 @@
 module.exports = {
   production: {
     username: 'samuca',
-    password: '',
+    password: 'Sirlopes..3',
     database: 'samuel-site/site-samuel',
     host: 'samuel-site.database.windows.net',
     dialect: 'mssql',
