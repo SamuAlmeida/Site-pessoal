@@ -24,7 +24,7 @@
                 <input id="email_usuario" name="email" type="text" placeholder="Email"><br><br>
                 Cadastre sua senha: <br>
                 <input id="senha_usuario" name="senha" type="password" placeholder="Senha"><br>
-                <button type="submit" id="btn_entrar" value="Cadastrar">Cadastrar</button><br>
+                <button type="submit" id="btn_entrar" value="Cadastrar">Cadastrar</button><br><br>
                 <div style="font-size: 20px;" id="resultado"></div>
             </form>
         </div>
@@ -56,7 +56,7 @@
                 window.location.href='login.html';
 
             } else {
-
+                alert(' ');
                 console.log('Erro de cadastro!');
                 response.text().then(function (resposta) {
                     resultado.innerHTML = resposta;
