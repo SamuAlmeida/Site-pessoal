@@ -12,20 +12,21 @@
         <b id="b_usuario"></b>
         <div class="nav">
             <ul>
-                <li><a href="home.html">Inicio</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li class="efeitoBtn efeito"><a href="home.html">Inicio</a></li>
+                <li class="efeitoBtn efeito"><a href="sobre.html">Sobre</a></li>
+                <li class="efeitoBtn efeito"><a href="login.html">Login</a></li>
             </ul>
         </div>
          <div class="fundo_conteudo">
-            <img src="img/sao_paulo.jpg" style="width: 20%; float: left; margin-left: 150px; margin-top: 250px; box-shadow: 8px 9px rgb(250, 0, 0);">
-            <h4 class="conteudo">
+            <img class="fade-in surge" data-rellax-speed="4" src="img/sao_paulo.jpg" style="width: 20%; float: left; margin-left: 150px; margin-top: 250px; box-shadow: 8px 9px rgb(250, 0, 0); border-radius: 12px;">
+            <h4 class="conteudo fade-in surge" data-rellax-speed="6">
                 <b style="font-size: 24px;">1° vez no Morumbi: </b> <br>
                 <p>Na minha primeira ida ao estádio pude ver uma vitória do são paulo sobre a chapecoense de 3x0, com um público de 40 mil pessoas, a sensção foi mágica e uma das melhores que senti na vida.</p>
             </h4>
-            
-            
         </div>
+    </div>
+    <div class="">
+
     </div>
     
     <!-- Rodapé -->
@@ -34,5 +35,10 @@
             <h3>Copyright by <b>Samuel Almeida</b></h3>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.js"></script>
 </body>
 </html>
+<script>
+    var surge = new Rellax('.surge');
+</script>

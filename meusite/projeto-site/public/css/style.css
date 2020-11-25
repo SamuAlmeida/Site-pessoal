@@ -1,3 +1,33 @@
+.fade-in{
+    animation: fadeIn 3.2s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.efeitoBtn{
+    font-size: 26px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 400ms ease;
+}
+
+.efeitoBtn:hover{
+    background: rgba(255, 255, 255, 0);
+    box-shadow: inset 10px 10px 30px 30px rgba(3, 3, 3, 0.63);
+}
+
+
 body{
     width: auto;
     text-align: center;
@@ -19,12 +49,6 @@ body{
     width: auto;
 }
 
-.nav ul{
-    margin: 0;
-    padding-top: 35px;
-}
-
-
 .title-header img{
     float: left;
     color: #ffffff;
@@ -34,48 +58,29 @@ body{
   
 .nav{
     float: right;
+    padding-right: 40px;
 }
   
-.nav a{
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 18px;
+.nav ul{
+    margin: 0;
+    padding-top: 30px;
 }
-  
+
 .nav li{
     display: inline-block;
-    padding: 20px;
-    padding: 10px 20px 0 20px;
     font-family: 'Times New Roman', Times, serif;
-}
-
-.nav ul{
-  margin: 0;
-}
-
-.title-header{
-  float: left;
-  color: #ffffff;
-}
-
-.nav{
-  float: right;
-  padding-right: 40px;
 }
 
 .nav a{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
-    color: #20f504;
+    color: #ffffff;
     text-transform: uppercase;
-    font-size: 18px;
 }
 
-.nav li{
-  display: inline-block;
-  padding: 20px;
-  padding: 10px 20px 0 20px;
+.title-header{
+  float: left;
+  color: #ffffff;
 }
 
 .background{
@@ -86,20 +91,19 @@ body{
     background-size: cover;
     width: 100%;
     height: 960px;
-    /* display: flex; */
 }
 
 
 .bloco1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 40%;
-    height: 15%;
+    height: 13%;
     float: left;
     border:  #09e8f0 solid 2px;
     text-align: left;
     padding-left: 20px;
     color:  #ffffff;
-    margin: 80px 0 0 20px;
+    margin: 200px 0 0 20px;
 }
 
 
@@ -250,7 +254,6 @@ body{
     float: left;
     width: 100%;
     height: 969px;
-    box-shadow: red 5px 6px;
 }
 
 .conteudo{
@@ -259,7 +262,8 @@ body{
     font-size: 19px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: justify;
-    background-color: rgba(255, 255, 255, 0.589);
+    background-color: rgba(243, 243, 243, 0.185);
+    color: rgb(238, 238, 238);
     margin-top: 310px;
     margin-right: 50px;
     padding: 15px;
@@ -267,7 +271,7 @@ body{
 }
 
 .fundo_conteudo{
-    background-color: rgba(0, 0, 0, 0.795);
+    background-color: rgba(0, 0, 0, 0.527);
     width: 100%;
     height: 100%;
 }
