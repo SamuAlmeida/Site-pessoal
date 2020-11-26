@@ -2,7 +2,7 @@ module.exports = {
   production: {
     username: 'samuca',
     password: 'Sirlopes..3',
-    database: 'samuel-site/site-samuel',
+    database: 'site-samuel',
     host: 'samuel-site.database.windows.net',
     dialect: 'mssql',
     xuse_env_variable: 'DATABASE_URL',

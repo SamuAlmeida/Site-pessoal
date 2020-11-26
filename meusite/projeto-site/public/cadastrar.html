@@ -21,7 +21,7 @@
                 Cadastre seu nome: <br>
                 <input id="nome_usuario" name="nome" type="text" placeholder="Nome"><br><br>
                 Cadastre seu email: <br>
-                <input id="email_usuario" name="email" type="text" placeholder="Email"><br><br>
+                <input id="email_usuario" name="login" type="text" placeholder="Email"><br><br>
                 Cadastre sua senha: <br>
                 <input id="senha_usuario" name="senha" type="password" placeholder="Senha"><br>
                 <button type="submit" id="btn_entrar" value="Cadastrar">Cadastrar</button><br><br>
@@ -55,7 +55,7 @@
                 window.location.href='login.html';
 
             } else {
-                alert(' ');
+                alert('Dados de login inválidos');
                 console.log('Erro de cadastro!');
                 response.text().then(function (resposta) {
                     resultado.innerHTML = resposta;

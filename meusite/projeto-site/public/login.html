@@ -11,6 +11,7 @@
     <div class="login">
         <div class="nav">
             <ul>
+                <h3>Olá, bem vindo: <b style="color:white;" id="b_usuario"></b></h3>
                 <li class="btn efeitoBtn hover"><a href="home.html">Inicio</a></li>
                 <li class="btn efeitoBtn hover"><a href="sobre.html">Sobre</a></li>
                 <li class="btn efeitoBtn hover"><a href="login.html">Login</a></li>
@@ -64,7 +65,6 @@
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                    // finalizar_aguardar(texto);
                 });
             }
         });
@@ -74,18 +74,4 @@
         
     }
 }     
-
-    // function aguardar() {
-    //     btn_entrar.disabled = true;
-    //     img_aguarde.style.visibility = 'visible';
-    //     div_erro.style.visibility = 'hidden';
-    // }
-
-    // function finalizar_aguardar(resposta) {
-    //     btn_entrar.disabled = false;
-    //     img_aguarde.style.visibility = 'hidden';
-    //     div_erro.style.visibility = 'visible';
-    //     div_erro.innerHTML = resposta;
-    // }
-
 </script>    
