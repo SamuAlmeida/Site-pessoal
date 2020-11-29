@@ -11,7 +11,6 @@ function verificar_autenticacao() {
     
     if (login_usuario == undefined)  {
         redirecionar_login();
-        alert('Por favor faça o login.')
     } else {
         b_usuario.innerHTML = nome_usuario;
         validar_sessao();

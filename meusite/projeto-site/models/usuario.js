@@ -16,17 +16,17 @@ module.exports = (sequelize, DataTypes) => {
 		nome: {
 			field: 'nome',
 			type: DataTypes.STRING,
-			allowNull: true
+			allowNull: false
 		},
 		login: {
 			field: 'login',
 			type: DataTypes.STRING,
-			allowNull: true
+			allowNull: false
 		},
 		senha: {
 			field: 'senha',
 			type: DataTypes.STRING,
-			allowNull: true
+			allowNull: false
 		}
 	}, 
 	{

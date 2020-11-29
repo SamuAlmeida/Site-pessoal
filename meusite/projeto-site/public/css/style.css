@@ -115,7 +115,6 @@ body{
     float: left;
     height: 420px;
     border-radius: 15px;
-    border:rgb(255, 255, 255) solid 3px;
     box-shadow:  10px 7px 6px 2px rgb(102, 245, 6);
     background: #ffffff;
 }
@@ -152,7 +151,7 @@ body{
     clear: both;
 }
 
-.footer h3{
+.footer h4{
     color: rgb(245, 6, 6);
     padding-top: 30px;
 }
@@ -173,7 +172,7 @@ body{
     font-size: 25px;
     height: 300px;
     border-radius: 15px;
-    color: white;
+    color: rgb(197, 197, 197);
     border:rgba(0, 0, 0, 0.493) solid 3px;
     box-shadow:  10px 7px 6px 2px rgba(245, 6, 6, 0.548);
     background: #ffffff00;
@@ -271,7 +270,69 @@ body{
 }
 
 .fundo_conteudo{
-    background-color: rgba(0, 0, 0, 0.527);
+    background-color: rgba(0, 0, 0, 0.397);
     width: 100%;
     height: 100%;
+}
+
+.pl-fundo{
+    background-attachment: fixed;
+}
+
+.sobre-conteudo{
+   width: 100%;
+   height: 800px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   background-size: cover;
+}
+
+.foto-sobre2{
+    background-image: url('../img/gamer.jpg');
+}
+
+.page{
+    border: 2px solid red;
+    clear: both;
+    width: 100%;
+}
+
+.texto{
+    width: 60%;
+    padding-top: 20px;
+    height: 150px;
+    text-align: left;
+    font-size: 19px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+#video-cod{
+    margin-left: 40px;
+}
+
+#video-pubg{
+    margin-left: 40px;
+}
+
+#video-rocket{
+    margin-left: 40px;
+}
+
+.texto2{
+    width: 60%;
+    padding-top: 20px;
+    height: 90px;
+    text-align: left;
+    font-size: 19px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.foto-sobre3{
+    background-image: url('../img/fundo.png');
+    width: 100%;
+    background-size: cover;
+    height: 900px;
 }

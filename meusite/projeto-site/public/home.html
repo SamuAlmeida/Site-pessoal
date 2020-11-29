@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="funcoes.js"></script>
 </head>
-<body>
+<script>
+    let usuario;
+
+    verificar_autenticacao();
+
+</script>          
+<body onload="verificar_autenticacao()">
     <div class="background">
         <div class="header">
             <div class="container">
                 <div class="nav">
                     <ul>
-                        <h3 class="efeito" style="display: none;">Olá, bem vindo: <b style="color:white;" id="b_usuario"></b></h3>
+                        <h3 style="color: black;">Olá, bem vindo: <b style="color:rgba(255, 255, 255, 0.979);" id="b_usuario"></b></h3>
+                        <li class="efeitoBtn efeito"><a href="login.html" onclick="logoff()">Logout</a></li>
                         <li class="efeitoBtn efeito"><a style="color: red;" href="home.html">Inicio</a></li>
                         <li class="efeitoBtn efeito"><a style="color: red;" href="sobre.html">Sobre</a></li>
                         <li class="efeitoBtn efeito"><a style="color: red;" href="login.html">Login</a></li>
@@ -90,7 +97,7 @@
     <!-- Rodapé -->
     <div class="footer">
         <div class="container">
-            <h3>Copyright by <b>Samuel Almeida</b></h3>
+            <h4>Copyright by <b>Samuel Almeida</b></h4>
         </div>
     </div>
 </body>

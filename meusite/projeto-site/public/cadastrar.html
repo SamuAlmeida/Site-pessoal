@@ -18,15 +18,20 @@
         <div class="form_cad">
             <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
                 <h3>Cadastro:</h3>
-                Cadastre seu nome: <br>
-                <input id="nome_usuario" name="nome" type="text" placeholder="Nome"><br><br>
-                Cadastre seu email: <br>
-                <input id="email_usuario" name="login" type="text" placeholder="Email"><br><br>
-                Cadastre sua senha: <br>
-                <input id="senha_usuario" name="senha" type="password" placeholder="Senha"><br>
+                <input id="nome_usuario" name="nome" type="text" placeholder="Cadastre seu nome:"><br><br>
+                <input id="email_usuario" name="login" type="text" placeholder="Cadastre seu email"><br><br>
+                <input id="senha_usuario" name="senha" type="password" placeholder="Cadastre sua senha"><br><br>
                 <button type="submit" id="btn_entrar" value="Cadastrar">Cadastrar</button><br><br>
+                <div id="gif"><img src="img/chute_cadastro.gif" alt="" style="width: 120px; display: none; height: 80;"></div>
                 <div style="font-size: 20px;" id="resultado"></div>
             </form>
+        </div>
+    </div>
+
+        <!-- Rodapé -->
+    <div class="footer">
+        <div class="container">
+            <h4>Copyright by <b>Samuel Almeida</b></h4>
         </div>
     </div>
 </body>
@@ -40,6 +45,7 @@
 
         if(email.indexOf('@' && '.') != -1 && email.length >=7 ){
             resultado.innerHTML = `Email válido!`;
+            
         } else{
             resultado.innerHTML = `Email inválido!`;
         }
@@ -49,10 +55,11 @@
             method: "POST",
             body: formulario
         }).then(function (response) {
-            
+
             if (response.ok) {
 
                 window.location.href='login.html';
+                gif.innerHTML.display = 'block';
 
             } else {
                 alert('Dados de login inválidos');
